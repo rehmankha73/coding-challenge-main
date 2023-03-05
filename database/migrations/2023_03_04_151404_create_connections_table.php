@@ -17,16 +17,13 @@ return new class extends Migration
         Schema::create('connections', function (Blueprint $table) {
             $table->id();
 
-            $table->foreignId('user_from')
+            $table->foreignId('user_1')
                 ->constrained('users')
                 ->cascadeOnDelete();
 
-            $table->foreignId('user_to')
+            $table->foreignId('user_2')
                 ->constrained('users')
                 ->cascadeOnDelete();
-
-            $table->string('status')
-                ->default(RequestType::COMPLETED);
 
             $table->timestamps();
         });

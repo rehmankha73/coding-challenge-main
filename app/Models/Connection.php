@@ -10,9 +10,8 @@ class Connection extends Model
 {
     use HasFactory;
 
-
-    public function user(): BelongsTo
-    {
-        return $this->belongsTo(User::class);
-    }
+    protected $fillable = [
+        'user_1',
+        'user_2',
+    ];
 }

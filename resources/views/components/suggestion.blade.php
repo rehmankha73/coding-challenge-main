@@ -4,7 +4,7 @@
       <td class="align-middle">Name</td>
       <td class="align-middle"> - </td>
       <td class="align-middle">Email</td>
-      <td class="align-middle"> 
+      <td class="align-middle">
     </table>
     <div>
       <button id="create_request_btn_" class="btn btn-primary me-1">Connect</button>
